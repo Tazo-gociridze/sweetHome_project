@@ -1,0 +1,206 @@
+.registration-container {
+    width: 55%;
+    display: flex;
+   
+}
+
+.registration-parent {
+    margin-top: 18px;
+    width: 100%;
+    padding-right: 30px;
+    display: flex;
+}
+
+.registration-content{
+       margin-right: auto;
+       width: 70%;
+       transition: 0.3s;
+}
+
+.registration-title {
+    display: flex;
+    margin-left: 40px;
+
+    h3 {
+        z-index: 1;
+        font-size: 21px;
+        color: white;
+    }
+}
+
+.little-inputs-div {
+    display: flex;
+
+    .input-child-2{
+        margin-left: 40px;
+    }
+}
+
+.input-child {
+    color: rgb(1, 208, 149);
+    font-family: Zen Kaku Gothic Antique;
+    z-index: 1;
+    // margin-left: 40px;
+    width: 300px;
+
+
+    input {
+        background-color: rgba(0, 0, 0, 0.286);
+        border: none;
+        width: 100%;
+        height: 35px;
+        color: white;
+    }
+
+    label {
+        margin-top: 20px;
+        line-height: 40px;
+    }
+}
+
+.big-input-div {
+    display: flex;
+    div{
+      z-index: 1;
+      margin-top: 30px;
+      width: 640px;
+    }
+
+    label{
+        color: rgb(1, 208, 149);
+        line-height: 40px;
+    }
+
+    input {
+        background-color: rgba(15, 14, 14, 0.612);
+        border: none;
+        z-index: 1;
+        width: 100%;
+        padding-bottom: 200px;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+.registration-btn{
+      display: flex;
+      max-width: 640px;
+      justify-content: center;
+    button{
+        z-index: 1;
+        background-color: rgba(1, 208, 149, 0.292);
+        border: none;
+        padding: 5px 200px 10px 200px;
+        color: white;
+        font-size: 22px;
+        letter-spacing: 2px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover{
+            background-color: rgba(1, 208, 149, 0.683);
+        }
+    }
+}
+
+@media (max-width:1500px) {
+    .registration-content{
+        margin: auto;
+        width: 90%;
+    }
+
+    .registration-btn{
+      button{
+          padding: 5px 100px 10px 100px;
+       
+      }
+  }
+}
+
+@media (max-width:1050px) {
+    .registration-content{
+        margin: auto;
+        width: 100%;
+    }
+
+    .registration-btn{
+      button{
+          padding: 5px 100px 10px 100px;
+       
+      }
+  }
+}
+
+@media (max-width:980px) {
+
+    .registration-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .registration-parent{
+        width: 80%;
+        padding-right: 0px;
+    }
+
+    .registration-content{
+
+        margin: auto;
+        width: 100%;
+    }
+
+    .input-child {
+        input{
+            width: 100%;
+        }
+    }
+
+    .little-inputs-div {
+        display: flex;
+        justify-content: space-between;
+        .input-child-2{
+            margin-left: 40px;
+        }
+    }
+
+    .big-input-div {
+
+        div{
+            margin: auto;
+            width: 767px;
+        }
+    }
+
+    .registration-btn{
+        margin: auto;
+    }
+   }
+
+
+
+   @media (max-width:650px) {
+
+    .registration-parent{
+        width: 95%;
+    }
+
+    .little-inputs-div {
+        display: flex;
+        justify-content: space-between;
+        .input-child-2{
+            margin-left: 40px;
+        }
+    }
+
+    .big-input-div {
+
+        div{
+            margin: auto;
+        }
+    }
+
+    .registration-btn{
+        margin: auto;
+    }
+   }

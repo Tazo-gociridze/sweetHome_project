@@ -1,0 +1,113 @@
+.our-services-container {
+    max-width: 100%;
+    margin-top: 60px;
+}
+
+.our-services-parent {
+    max-width: 95%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transition: 0.5s;
+}
+
+.our-services-content {
+    width: 23%;
+    height: 420px;
+    background-color: rgba(22, 21, 21, 0.687);
+    text-align: center;
+    transition: 0.3s;
+    z-index: 20;
+    transition: 0.5s;
+
+    &:hover{
+        background-color: rgba(0, 0, 0, 0);
+        .services-img-dynamic-fon{
+            width: 95%;
+            height: 95%;
+            backdrop-filter: blur(1px);
+        }
+        .services-p{
+            transform: translateY(-200px);
+            color: rgb(193, 213, 212);
+            letter-spacing: 12px;
+        }
+    }
+
+    .services-img-1{background-image: url(../image/our-services-img/01.jpg);}
+    .services-img-2{background-image: url(../image/our-services-img/02.jpg);}
+    .services-img-3{background-image: url(../image/our-services-img/03.jpg);}
+    .services-img-4{background-image: url(../image/our-services-img/04.jpg);}
+}
+
+.services-img {
+    width: 100%;
+    height: 320px;
+    background-size: 100% 320px;
+    transition: 0.3s;
+    
+}
+
+.services-img-darkfon{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.402);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.services-img-dynamic-fon{
+    transition: 0.3s;
+    border: 1px solid rgb(1, 208, 149);
+    border-bottom: none;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(35, 38, 37, 0.711);
+}
+
+.services-p {
+    display: inline-block;
+    color: rgb(217, 199, 199);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: PT sans;
+    transition: 0.3s;
+    transform: translateY(0px);
+}
+
+@media (max-width:1500px) {
+    .our-services-parent{
+        max-width: 60%;
+    }
+    .our-services-content{
+           width: 400px;
+           margin-top: 30px;
+    }
+}
+@media (max-width:1390px) {
+    .our-services-parent{
+        max-width: 70%;
+    }
+}
+@media (max-width:1200px) {
+    .our-services-parent{
+        max-width: 80%;
+    }
+}
+@media (max-width:1050px) {
+    .our-services-parent{
+        max-width: 90%;
+    }
+}
+@media (max-width:930px) {
+    .our-services-parent{
+        max-width: 100%;
+    }
+    .our-services-content{
+        margin: auto;
+        margin-top: 30px;
+ }
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+
+@import "./header";
+@import "./flashSlide";
+@import "./modal";
+@import "./info";
+@import "./about";
+@import "./rate";
+@import "./projects";
+@import "./projectsModal";
+@import "./ourTestimonial";
+@import './brand';
+@import './ourServices';
+@import './team';
+@import './footer';
+@import './contact';
+@import './registration';
+// fonts -------------------------->
+
+.ptsans{
+    font-family: PT Sans;
+}
+
+.zenkaku{
+    font-family: Zen Kaku Gothic Antique;
+}
+// fonts -------------------------->
+
+.body{
+    background-image: url(../image/wallpapersden.com_grey-simple-texture-pattern_1366x768.jpg);
+    background-size: 4px 4px;
+    margin: 0;
+    padding: 0;
+}
+
+.disabled-scroll{
+    overflow-y: hidden;
+}
+.enabled-scroll{
+    overflow-y: auto;
+}
+
+*{
+  box-sizing: border-box;  
+}
+.white{
+    color: rgb(202, 171, 171);
+}
+.lightgreen{
+    color: rgb(1, 208, 149);
+}
+a{
+    text-decoration: none;
+}
+
+.hr{
+  border: 1px solid rgb(1, 208, 149);
+}
+.hr-white{
+    background-color: white;
+  }
+
+.index{
+    z-index: 10;
+}
+
+.title-container{
+    margin-top: 60px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  
+}
+.title-decoration-line{
+    margin-top: 2px;
+    height: -1px;
+    width: 70px;
+    border-bottom: 1px solid rgb(1, 208, 149);
+}
+.titlee{
+    padding: 0px 20px;
+    font-size: 30px;
+    color: rgb(212, 195, 195);
+    // text-transform: uppercase;
+}

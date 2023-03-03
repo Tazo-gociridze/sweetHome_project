@@ -1,0 +1,326 @@
+.team-container {
+    max-width: 100%;
+    height: 700px;
+    background-color: rgb(21, 20, 20);
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+}
+
+.team-parent {
+    width: 90%;
+    height: 700px;
+    background-image: url(../image/team-img/fon/02.jpg);
+    background-size: 100% 900px;
+    margin-top: 100px;
+    position: relative;
+    box-shadow: 3px 3px 3px, -3px -3px 31px rgb(0, 0, 0);
+}
+
+.team-darkfon {
+    background-color: rgba(20, 20, 20, 0.789);
+    // background-color: rgba(22, 22, 22, 0.718);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid rgb(1, 208, 149);
+}
+
+.team-title-btn-box {
+    transition: 0.3s;
+    width: 85.2%;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.team-title {
+    display: flex;
+    align-items: center;
+}
+
+.team-title-decoration-line {
+    width: 220px;
+    height: -1px;
+    border-bottom: 1px solid rgba(1, 208, 149, 0.751);
+    transition: 0.3s;
+}
+
+.team-p {
+    color: rgb(221, 203, 203);
+    font-size: 26px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+.team-btn {
+    padding: 7px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: auto;
+    background-color: rgba(0, 0, 0, 0.357);
+    border: 1px solid rgba(1, 208, 149, 0.487);
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(1, 208, 149, 0.486);
+        color: rgb(40, 38, 38);
+    }
+}
+
+
+// ------------------------------------------- team-box >>>>>>>>>>>>
+
+
+.team-box {
+    max-width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    transition: 0.3s;
+}
+
+.team-content {
+    width: 370px;
+    height: 370px;
+    background-color: rgba(164, 188, 181, 0.17);
+    transition: 0.3s;
+    // background-color: rgb(27, 27, 27);
+
+
+    &:hover {
+        background-color: rgba(1, 208, 149, 0.22);
+        .team-decoration-box {
+            margin-top: -23px;
+        }
+    }
+}
+
+.team-decoration-box {
+    border: 1px solid rgb(22, 21, 21);
+    width: 100%;
+    height: 100%;
+    // margin-left: -7px;
+    margin-top: -7px;
+    background-color: rgb(22, 21, 21);
+    transition: 0.3s;
+    // border: 1px solid rgba(1, 208, 149, 0.171);
+}
+
+.profession-name{
+    color: rgb(1, 208, 149);
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding-left: 10px;
+    margin-top: 70px;
+}
+
+.team-img-name {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.team-name {
+    color: rgb(214, 193, 193);
+    text-align: center;
+    width: 55%;
+    padding-right: 20px;
+    
+    h1{
+        display: inline-block;
+        font-size: 22px;
+        letter-spacing: 1px;
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+
+.team-contact{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: space-around;
+    margin-top: 10px;
+
+    .team-contact-icons{
+        color: rgb(215, 190, 190);
+        font-size: 20px;
+        transition: 0.3s;
+        padding: 0px 5px;
+
+        &:hover{
+            background-color: rgba(1, 208, 149, 0.629);
+            color: rgb(40, 38, 38);
+        }
+    }
+}
+
+.team-img {
+    margin-left: 10px;
+    width: 150px;
+    height: 150px;
+    background-size: 170px 250px;
+    position: relative;
+    transition: 0.3s;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(37, 36, 36, 0.566);
+    }
+}
+
+.team-img-1 {
+    background-image: url(../image/team-img/people/01.jpg);
+}
+
+.team-img-2 {
+    background-image: url(../image/team-img/people/02.jpg);
+    background-size: 180px 200px;
+
+}
+
+.team-img-3 {
+    background-image: url(../image/team-img/people/03.jpg);
+    background-size: 180px 250px;
+}
+
+.team-info{
+    margin-top: 20px;
+    padding-left: 20px;
+    color: rgb(229, 209, 209);
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+
+
+@media (max-width:1730px) {
+    .team-box {
+        max-width: 85%;
+    }
+}
+
+@media (max-width:1500px) {
+    .team-box {
+        max-width: 90%;
+    }
+    .team-content {
+        width: 330px;
+        height: 330px;
+    }
+    .team-img{
+        width: 100px;
+        height: 100px;
+        background-size: 120px 150px;
+    }
+    .team-name{
+        width: 65%;
+        h1{
+            font-size: 19px;
+        }
+    }
+    .team-contact{
+          width: 60%;
+        .team-contact-icons{
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width:1280px) {
+
+    .team-title-btn-box {
+        width: 97%;
+    }
+
+    .team-title-decoration-line {
+        width: 100px;
+    }
+
+
+
+    .team-container {
+        height: 1000px;
+    }
+    .team-parent {
+        height: 1000px;
+        background-size: 1280px 1000px;
+    }
+    .team-box {
+        max-width: 700px;
+        margin-top: 20px;
+    }
+    .team-content {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:930px) {
+    .team-title-decoration-line {
+        width: 100px;
+    }
+    .team-p {
+        font-size: 20px;
+    }
+    .team-btn{
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width:865px) {
+    .team-container {
+        height: 1300px;
+    }
+    .team-parent {
+        height: 1300px;
+        background-size: 1780px 1300px;
+    }
+    .team-box {
+        max-width: 400px;
+        margin-top: 20px;
+    }
+    .team-content {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:790px) {
+    .team-title-decoration-line {
+        width: 20px;
+    }
+    .team-p {
+        font-size: 18px;
+    }
+    .team-btn{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:500px) {
+    .team-title-btn-box {
+        transition: 0.3s;
+        width: 85.2%;
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    .team-btn{
+        margin: auto;
+        font-size: 13px;
+    }
+}

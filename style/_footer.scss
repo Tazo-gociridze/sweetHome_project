@@ -1,0 +1,208 @@
+footer {
+    position: relative;
+    max-width: 100%;
+    height: 890px;
+    background-image: url(../image/rate-image/01.jpg);
+    background-size: 100% 1000px;
+    margin-top: 180px;
+
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(26, 25, 25, 0.894);
+        backdrop-filter: blur(2px);
+        border-top: 1px solid rgb(1, 208, 149);
+    }
+}
+
+.set-request {
+    margin: auto;
+    max-width: 90%;
+    position: relative;
+    z-index: 30;
+}
+
+.set-request-content{
+    position: absolute;
+    top: -75px;
+    width: 100%;
+    // background-image: url(../image/team-img/fon/01.jpg);
+    background-image: url(../image/testimonials-img/fon-image/02.jpg);
+    background-size: 100% 1000px;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(1, 208, 149);
+    flex-wrap: wrap;
+
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(23, 23, 23, 0.932);
+    }
+}
+
+.set-request-text {
+    z-index: 20;
+
+    h1 {
+        color: white;
+    }
+
+    p {
+        color: rgb(1, 208, 149);
+
+    }
+}
+
+.set-request-h1{
+    display: flex;
+    align-items: center;
+    div{
+        width: 100px;
+        height: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.625);
+        border-radius: 10%;
+        transition: 0.3s;
+    }
+    
+    h1{
+        margin-left: 20px;
+        transition: 0.3s;
+    }
+}
+
+.set-request-input {
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+
+    input {
+        width: 350px;
+        height: 36px;
+        background-color: rgb(182, 208, 208);
+        border: none;
+        transition: 0.3s;
+    }
+
+    button {
+        border: none;
+        padding: 8px 30px 7px 30px;
+        background-color: rgba(1, 208, 149, 0.612);
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 18px;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover{
+            background-color: rgba(1, 208, 149, 0.836);
+        }
+    }
+}
+
+@media (max-width:1250px) {
+        
+    .set-request-input{
+        input{
+            width: 250px;
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    
+    .set-request-content{
+        top: -55px;
+    }
+    
+    .set-request-input{
+        input{
+            width: 200px;
+        }
+    }
+
+    .set-request-h1{
+        h1{
+            font-size: 25px;
+        }
+    }
+
+    .set-request-text {
+
+        p{
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .set-request-content{
+        top: -65px;
+    }
+    .set-request-input{
+            margin-top: 20px;
+    }
+
+    .set-request-text{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+    }
+
+    .set-request-text {
+
+        p{
+            display: none;
+        }
+    }
+
+    .set-request-content{
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width:980px) {
+    
+    footer{
+        background-size: 1920px 1700px;
+        height: 1490px;
+    }
+}
+
+@media (max-width:450px) {
+    .set-request-h1{
+        h1{
+            font-size: 20px;
+        }
+
+        div{
+               width: 50px;
+        }
+    }
+
+    .set-request-input{
+        flex-wrap: wrap;
+        input{
+            width: 200px;
+            margin: auto;
+        }
+
+        button{
+             margin: auto;
+        }
+    }
+}
